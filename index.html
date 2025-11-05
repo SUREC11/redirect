@@ -4,7 +4,6 @@
 <meta charset="UTF-8" />
 <title>Strona z obrazkiem</title>
 <style>
-  /* Opcjonalne style, aby obrazek był na środku */
   body {
     display: flex;
     justify-content: center;
@@ -19,13 +18,11 @@
 </head>
 <body>
 
-<!-- Obrazek, który po kliknięciu przekieruje -->
 <img src="https://cumcams.cc/imgs/ads_590x285.png" alt="Kliknij mnie" id="redirectImage" />
 
 <script>
-  const image = document.getElementById('redirectImage');
-  image.addEventListener('click', () => {
-    window.location.href = 'https://recu.to/?ref=WC7A66A0'; // Twój link
+  document.getElementById('redirectImage').addEventListener('click', function() {
+    window.location.href = 'https://recu.to/?ref=WC7A66A0';
   });
 </script>
 
